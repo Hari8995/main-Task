@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Creating Elements</title>
+    <style>
+      .myClass {
+        color: blue;
+        font-size: 18px;
+        background-color: #e0e0e0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="hello">This is the container</div>
+    <div id="container">This is the container</div>
+    <div class="hello">This is the container</div>
+    <div>This is the container</div>
+    <div id="welcome">helo</div>
+    <div class="hello">This is the container</div>
+
+    <script>
+      // Acess elements in DOM
+
+      //  document.getElementById()
+      //  document.getElementsByClassName()
+      //  document.getElementsByTagName()
+      //  document.querySelector()
+      //  document.querySelectorAll()
+
+        // <!-- document.getElementById('container').innerHTML=22  -->
+
+       // let value =  document.getElementsByClassName('hello')
+       // console.log(value);
+       // value[0].innerHTML='kijhgfd'
+       // value[1].innerHTML='fghjk'  
+       // value[2].innerHTML='fghjk'  
+       
+//
+      // let  value = document.getElementsByTagName('div')
+      //  console.log(value);
+      //  value[0].innerHTML='kijhgfd'   
+//
+      //  document.querySelector('.hello').innerHTML='cvbnm'
+//
+// let value = document.querySelectorAll('.hello')
+// console.log(value);
+// value.forEach((items)=>{
+//  items.innerHTML='dfgh'
+// })
+
+      // adding a style using class
+
+      // var element = document.getElementById("container");
+      // element.style.backgroundColor = "red";
+
+      // var element = document.getElementById("welcome");
+      // element.classList.add("myClass");
+
+      // creating an element
+
+      //  var newElement = document.createElement("div")
+      //  newElement.setAttribute("id", "myNewElement");
+      //  newElement.setAttribute("class", "newElementClass")
+      //  newElement.innerHTML = "This is a new element."
+      //  console.log(newElement);
+
+      // adding to our documents
+
+       document.body.appendChild(newElement)
+
+      // removing to our documents
+      //  var RemoveElement =  document.getElementById('welcome')
+      //  console.log(RemoveElement)
+      //  document.body.removeChild(RemoveElement)
+
+      // var element = document.getElementById("container");
+      // var newText = document.createTextNode("New text content");
+      // element.innerHTML = ""; // Clear existing content
+      // element.appendChild(newText);
+    </script>
+  </body>
+</html>
