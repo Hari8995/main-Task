@@ -1,5 +1,5 @@
 function fooddata(){
-    return promisse1= new Promise((resolve,reject) => {
+    return promise1 = new Promise ((resolve,reject) => {
         setTimeout(()=>{
             const data=[{id:1,name:"apple"},{id:2,name:"mango"}]
             resolve(data)},2000);
@@ -8,7 +8,7 @@ function fooddata(){
 }
 
 function quantity(){
-    return promise2= new promise ((resolve,reject)=>{
+    return promise2 = new Promise ((resolve,reject)=>{
         setTimeout(()=>{ 
             const data=[{id:1, qn:100},{id:2,qn:40}]
         resolve(data)
@@ -16,6 +16,15 @@ function quantity(){
        
     })
     
+}
+
+function price(){
+    return promise3 = new Promise ((resolve,reject)=>{
+        setTimeout(()=>{
+            const data=[{id:1,price:30},{id:2,price:25}]
+            resolve(data)
+        },2000);
+    })
 }
 
 fooddata()
@@ -28,9 +37,27 @@ fooddata()
 quantity()
     .then(data =>
         {
+            console.log("------------------------------");
+
             console.log(data);
+            return price()
             
         })
+
+price()
+.then(data=>{
+    console.log("------------------------------");
+    console.log(data);
+}
+)
+
+
+// ============
+
+console.log("xxxxxxxxxxxxxxxxxxxxxx");
+setTimeout(()=>{
+    console.log("xxxxxxxxxxxxxxxxxxxxxx");
+},3000);
 
 
 
